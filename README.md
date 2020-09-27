@@ -1,6 +1,6 @@
-# SpectrumUser app
+# SpectrumApp
 
-## Programming Problem
+## App Requirements
 
 Provide a production ready solution that accepts a new user name, validates a single string input as the password, and
 stores it locally. The solution should be written in C#/Xamarin with native UI (Android or iOS, your choice, not Xamarin
