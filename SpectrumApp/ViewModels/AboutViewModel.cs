@@ -7,10 +7,6 @@ namespace SpectrumApp
         public AboutViewModel()
         {
             Title = "About";
-
-            OpenWebCommand = new Command(() => Plugin.Share.CrossShare.Current.OpenBrowser("https://www.mobileradsolutions.com"));
         }
-
-        public ICommand OpenWebCommand { get; }
     }
 }

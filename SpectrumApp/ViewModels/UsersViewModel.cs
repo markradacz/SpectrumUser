@@ -21,7 +21,7 @@ namespace SpectrumApp
             AddItemCommand = new Command<User>(async (User item) => await AddItem(item));
         }
 
-        async Task ExecuteLoadItemsCommand()
+        public async Task ExecuteLoadItemsCommand()
         {
             if (IsBusy)
                 return;
@@ -47,7 +47,7 @@ namespace SpectrumApp
             }
         }
 
-        async Task AddItem(User item)
+        public async Task AddItem(User item)
         {
             UserList.Add(item);
             await DataStore.AddUpdateUserAsync(item);

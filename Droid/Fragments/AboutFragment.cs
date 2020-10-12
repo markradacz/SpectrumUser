@@ -48,7 +48,7 @@ namespace SpectrumApp.Droid
 
         void LearnMoreButton_Click(object sender, System.EventArgs e)
         {
-            ViewModel.OpenWebCommand.Execute(null);
+            Plugin.Share.CrossShare.Current.OpenBrowser("https://www.mobileradsolutions.com");
         }
     }
 }
